@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('CooperHewitt-Bold.woff2') format('woff2'),
+        url('CooperHewitt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('CooperHewitt-Medium.woff2') format('woff2'),
+        url('CooperHewitt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('CooperHewitt-Light.woff2') format('woff2'),
+        url('CooperHewitt-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('CooperHewitt-Heavy.woff2') format('woff2'),
+        url('CooperHewitt-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
