@@ -11,3 +11,11 @@
         @apply mb-5;
     }
 }
+
+.--intro {
+    h1 {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+}

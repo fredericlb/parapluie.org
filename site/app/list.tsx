@@ -4,13 +4,15 @@ import { ArticleMetadata } from "@/app/types";
 import Menu from "@/app/menu";
 import { useTexts } from "@/texts";
 import Link from "next/link";
+import { ReactNode } from "react";
 
 const PostsList: React.FC<{
 	title: string;
 	locale: "en" | "fr";
 	allArticles: ArticleMetadata[];
 	selectedArticles: ArticleMetadata[];
-}> = ({ allArticles, locale, title, selectedArticles }) => {
+	intro?: ReactNode;
+}> = ({ allArticles, locale, title, selectedArticles, intro }) => {
 	const texts = useTexts(locale);
 	return (
 		<RootLayout>
@@ -23,6 +25,14 @@ const PostsList: React.FC<{
 					<h1 className="sticky top-0 mb-8 font-display bg-white text-black uppercase font-bold m-0 text-xl w-full pb-3 pt-5 pl-2 flex items-center">
 						{title}
 					</h1>
+					{intro && (
+						<div
+							className="font-body mx-4 text-sm mb-12 bg-gray-200 p-4 --intro"
+							style={{ background: "#000033" }}
+						>
+							{intro}
+						</div>
+					)}
 					<div>
 						{selectedArticles.map((mtd) => (
 							<div className="w-full p-4" key={mtd.slugs[locale]}>

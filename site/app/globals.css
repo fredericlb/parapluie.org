@@ -3,20 +3,23 @@
 @tailwind utilities;
 
 body {
-  color: #EEE;
-  background: #020202;
+    color: #EEE;
+    background: #020202;
 }
 
 nav {
-  background: #000033;
+    background: #000033;
 }
 
 .prpl-logo:before {
-  content: " ";
-  background: url('/header-logo.webp') no-repeat;
-  background-size: contain;
-  position: absolute;
-  inset: 0;
-  left: -45px;
+    content: " ";
+    background: url('/header-logo.webp') no-repeat;
+    background-size: contain;
+    position: absolute;
+    inset: 0;
+    left: -45px;
 }
 
+a {
+    text-decoration: underline;
+}
