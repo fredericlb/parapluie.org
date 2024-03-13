@@ -61,47 +61,47 @@ void main(void) {
     gl_FragColor = mix(transparent, v_color, (radius - distToCenter) / v_border);
   else
     gl_FragColor = transparent;
-}`
+}`;
 
-const POINTS = 1,
-    ATTRIBUTES = 4;
+const POINTS = 1;
+const ATTRIBUTES = 4;
 
 export default class NodeProgramGroup extends AbstractNodeProgram {
-    constructor(gl: WebGLRenderingContext) {
-        super(gl, vertexShaderSource, fragmentShaderSource, POINTS, ATTRIBUTES);
-        this.bind();
-    }
+	constructor(gl: WebGLRenderingContext) {
+		super(gl, vertexShaderSource, fragmentShaderSource, POINTS, ATTRIBUTES);
+		this.bind();
+	}
 
-    process(data: NodeDisplayData, hidden: boolean, offset: number): void {
-        const array = this.array;
-        let i = offset * POINTS * ATTRIBUTES;
+	process(data: NodeDisplayData, hidden: boolean, offset: number): void {
+		const array = this.array;
+		let i = offset * POINTS * ATTRIBUTES;
 
-        if (hidden) {
-            array[i++] = 0;
-            array[i++] = 0;
-            array[i++] = 0;
-            array[i++] = 0;
-            return;
-        }
+		if (hidden) {
+			array[i++] = 0;
+			array[i++] = 0;
+			array[i++] = 0;
+			array[i++] = 0;
+			return;
+		}
 
-        const color = floatColor(data.color);
+		const color = floatColor(data.color);
 
-        array[i++] = data.x;
-        array[i++] = data.y;
-        array[i++] = data.size;
-        array[i] = color;
-    }
+		array[i++] = data.x;
+		array[i++] = data.y;
+		array[i++] = data.size;
+		array[i] = color;
+	}
 
-    render(params: RenderParams): void {
-        const gl = this.gl;
+	render(params: RenderParams): void {
+		const gl = this.gl;
 
-        const program = this.program;
-        gl.useProgram(program);
+		const program = this.program;
+		gl.useProgram(program);
 
-        gl.uniform1f(this.ratioLocation, 1 / Math.sqrt(params.ratio));
-        gl.uniform1f(this.scaleLocation, params.scalingRatio);
-        gl.uniformMatrix3fv(this.matrixLocation, false, params.matrix);
+		gl.uniform1f(this.ratioLocation, 1 / Math.sqrt(params.ratio));
+		gl.uniform1f(this.scaleLocation, params.scalingRatio);
+		gl.uniformMatrix3fv(this.matrixLocation, false, params.matrix);
 
-        gl.drawArrays(gl.POINTS, 0, this.array.length / ATTRIBUTES);
-    }
+		gl.drawArrays(gl.POINTS, 0, this.array.length / ATTRIBUTES);
+	}
 }

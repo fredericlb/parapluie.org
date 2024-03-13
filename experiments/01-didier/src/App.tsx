@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import {
-	SigmaContainer,
-	ZoomControl,
-	FullScreenControl,
-} from "@react-sigma/core";
+import { SigmaContainer } from "@react-sigma/core";
 import Graph from "graphology";
 import circular from "graphology-layout/circular";
 import forceAtlas2 from "graphology-layout-forceatlas2";
@@ -21,9 +17,7 @@ import {
 	BsCheckSquareFill,
 	BsChevronBarRight,
 	BsList,
-	BsPlay,
 	BsPlayBtnFill,
-	BsPlusSquareDotted,
 	BsPlusSquareFill,
 	BsToggle2Off,
 	BsToggle2On,
@@ -40,9 +34,9 @@ function drawLabel(
 	settings: Settings,
 ): void {
 	if (!data.label) return;
-	const size = settings.labelSize,
-		font = settings.labelFont,
-		weight = settings.labelWeight;
+	const size = settings.labelSize;
+	const font = settings.labelFont;
+	const weight = settings.labelWeight;
 
 	context.font = `${weight} ${size}px ${font}`;
 
@@ -95,13 +89,8 @@ function GraphContainer() {
 	const [search, setSearch] = useState<string>("");
 	const [showTransitions, setShowTransitions] = useState(true);
 	const [tagsUniversesRatio, setTagsUniversesRatio] = useState(50);
-	const {
-		isConnected,
-		startSesh,
-		addSongToSesh,
-		playedSongsIds,
-		currentSongId,
-	} = useSessionContext();
+	const { isConnected, addSongToSesh, playedSongsIds, currentSongId } =
+		useSessionContext();
 
 	useEffect(() => {
 		if (graph) {
@@ -203,7 +192,7 @@ function GraphContainer() {
 										style={{
 											position: "relative",
 											top: "4px",
-											fontDecoration: "underline",
+											textDecoration: "underline",
 											marginRight: 8,
 										}}
 									/>
@@ -233,7 +222,7 @@ function GraphContainer() {
 												style={{
 													position: "relative",
 													top: "4px",
-													fontDecoration: "underline",
+													textDecoration: "underline",
 													marginRight: 8,
 												}}
 											/>
@@ -244,7 +233,7 @@ function GraphContainer() {
 												style={{
 													position: "relative",
 													top: "4px",
-													fontDecoration: "underline",
+													textDecoration: "underline",
 													marginRight: 8,
 												}}
 											/>
@@ -255,7 +244,7 @@ function GraphContainer() {
 												style={{
 													position: "relative",
 													top: "4px",
-													fontDecoration: "underline",
+													textDecoration: "underline",
 													marginRight: 8,
 												}}
 											/>
