@@ -1,0 +1,4 @@
+{
+  "name": "parapluie-org-monorepo",
+  "workspaces": ["experiments/*", "site"]
+}
