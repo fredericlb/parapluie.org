@@ -19,12 +19,12 @@ const GraphEventsController: FC<{
 		const container = sigma.getContainer();
 		const obs = new ResizeObserver(() => {
 			sigma.refresh();
-		})
+		});
 		obs.observe(container);
-		
+
 		return () => {
 			obs.disconnect();
-		}
+		};
 	}, [sigma]);
 
 	const animateNode = (
@@ -66,7 +66,7 @@ const GraphEventsController: FC<{
 		});
 		PREVIOUS_POSITIONS = [];
 	};
-	
+
 	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		registerEvents({

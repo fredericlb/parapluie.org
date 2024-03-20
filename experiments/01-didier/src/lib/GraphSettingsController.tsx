@@ -9,18 +9,15 @@ const EDGE_FADE_COLOR = "#eee";
 function useDebounce<T>(value: T, delay: number): T {
 	const [debouncedValue, setDebouncedValue] = useState<T>(value);
 
-	useEffect(
-		() => {
-			const handler = setTimeout(() => {
-				if (value !== debouncedValue) setDebouncedValue(value);
-			}, delay);
+	useEffect(() => {
+		const handler = setTimeout(() => {
+			if (value !== debouncedValue) setDebouncedValue(value);
+		}, delay);
 
-			return () => {
-				clearTimeout(handler);
-			};
-		},
-		[value, delay, debouncedValue], 
-	);
+		return () => {
+			clearTimeout(handler);
+		};
+	}, [value, delay, debouncedValue]);
 
 	return debouncedValue;
 }
@@ -33,6 +30,7 @@ const GraphSettingsController: FC<{ hoveredNode: string | null }> = ({
 
 	const debouncedHoveredNode = useDebounce(hoveredNode, 40);
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		const hoveredColor: string = debouncedHoveredNode
 			? sigma.getNodeDisplayData(debouncedHoveredNode)?.color ?? ""
