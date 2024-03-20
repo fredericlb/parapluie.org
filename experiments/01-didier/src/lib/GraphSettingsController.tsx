@@ -7,24 +7,19 @@ const NODE_FADE_COLOR = "#bbb";
 const EDGE_FADE_COLOR = "#eee";
 
 function useDebounce<T>(value: T, delay: number): T {
-	// State and setters for debounced value
 	const [debouncedValue, setDebouncedValue] = useState<T>(value);
 
 	useEffect(
 		() => {
-			// Update debounced value after delay
 			const handler = setTimeout(() => {
 				if (value !== debouncedValue) setDebouncedValue(value);
 			}, delay);
 
-			// Cancel the timeout if value changes (also on delay change or unmount)
-			// This is how we prevent debounced value from updating if value is changed ...
-			// .. within the delay period. Timeout gets cleared and restarted.
 			return () => {
 				clearTimeout(handler);
 			};
 		},
-		[value, delay, debouncedValue], // Only re-call effect if value or delay changes
+		[value, delay, debouncedValue], 
 	);
 
 	return debouncedValue;
@@ -36,28 +31,8 @@ const GraphSettingsController: FC<{ hoveredNode: string | null }> = ({
 	const sigma = useSigma();
 	const graph = sigma.getGraph();
 
-	// Here we debounce the value to avoid having too much highlights refresh when
-	// moving the mouse over the graph:
 	const debouncedHoveredNode = useDebounce(hoveredNode, 40);
 
-	/**
-	 * Initialize here settings that require to know the graph and/or the sigma
-	 * instance:
-	 */
-	/*
-    useEffect(() => {
-        sigma.setSetting("hoverRenderer", (context, data, settings) =>
-            drawHover(context, { ...sigma.getNodeDisplayData(data.key), ...data }, settings),
-        );
-    }, [sigma, graph]);
-    */
-
-	/**
-	 * Update node and edge reducers when a node is hovered, to highlight its
-	 * neighborhood:
-	 */
-
-	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		const hoveredColor: string = debouncedHoveredNode
 			? sigma.getNodeDisplayData(debouncedHoveredNode)?.color ?? ""

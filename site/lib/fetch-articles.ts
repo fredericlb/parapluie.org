@@ -38,10 +38,11 @@ export async function getAllArticles(): Promise<ArticleMetadata[]> {
 
 export async function getArticlesContent(
 	mtds: ArticleMetadata[],
+	locale: 'fr'|'en'
 ): Promise<MDXRemoteSerializeResult[]> {
 	const content: MDXRemoteSerializeResult[] = [];
 	for (const mtd of mtds) {
-		content.push(await serialize(fs.readFileSync(mtd.paths.fr)));
+		content.push(await serialize(fs.readFileSync(mtd.paths[locale])));
 	}
 	return content;
 }

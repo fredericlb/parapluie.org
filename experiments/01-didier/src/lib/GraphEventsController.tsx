@@ -15,6 +15,18 @@ const GraphEventsController: FC<{
 	const graph = sigma.getGraph();
 	const registerEvents = useRegisterEvents();
 
+	useEffect(() => {
+		const container = sigma.getContainer();
+		const obs = new ResizeObserver(() => {
+			sigma.refresh();
+		})
+		obs.observe(container);
+		
+		return () => {
+			obs.disconnect();
+		}
+	}, [sigma]);
+
 	const animateNode = (
 		n: string,
 		targetX: number,
@@ -54,12 +66,7 @@ const GraphEventsController: FC<{
 		});
 		PREVIOUS_POSITIONS = [];
 	};
-
-	/**
-	 * Initialize here settings that require to know the graph and/or the sigma
-	 * instance:
-	 */
-
+	
 	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		registerEvents({

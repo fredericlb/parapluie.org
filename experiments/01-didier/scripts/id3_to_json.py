@@ -1,7 +1,5 @@
 import os
 import json
-import eyed3
-import eyed3.plugins.jsontag
 from mutagen.id3 import ID3
 from mutagen.mp3 import MP3
 import time

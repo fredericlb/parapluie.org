@@ -1,6 +1,12 @@
 import fr from "./fr";
 
 export default {
+	article: {
+		publish: "Published on",
+		experiment: "Experiment",
+		expand: "Maximize",
+		reduce: "Minimize"
+	},
 	site: {
 		title: "Parapluie.Org",
 		subtitle: "Lorem Ipsum ?",
@@ -9,7 +15,7 @@ export default {
 		home: "Home",
 		about: "About",
 		last_posts: "Last posts",
-		small_projects: "Little projects",
+		small_projects: "Experiments",
 		topics: "Topics",
 		footer: "Words and code by Frédéric Langlade-Bellone",
 		menu: "Menu",
@@ -20,10 +26,13 @@ export default {
 		en: "English",
 	},
 	home: {
-		title: "Bienvenue !",
+		title: "Welcome !",
 	},
 	tag: {
-		title: "Articles avec le tag #",
+		title: "Posts with tag #",
 	},
 	readmore: "Read more",
+	tags: {
+		'musique': 'music',
+	}
 } satisfies typeof fr;

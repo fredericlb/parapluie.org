@@ -85,7 +85,7 @@ const Menu: FC<{
 		)),
 		[texts.menu.topics]: tags.map((t) => (
 			<HighlightLink key={t} href={`/tag/${t}`} locale={locale}>
-				{`#${t}`}
+				{`#${texts.tags[t] ?? t}`}
 			</HighlightLink>
 		)),
 	};

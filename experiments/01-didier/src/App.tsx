@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "./App.css";
 import { SigmaContainer } from "@react-sigma/core";
 import Graph from "graphology";
@@ -24,9 +24,11 @@ import {
 } from "react-icons/bs";
 import MessagesConsole from "./lib/Console";
 import { SongData, SongNodeData, getGraph } from "./data";
+import FA2Layout from 'graphology-layout-forceatlas2/worker';
 
 import { SessionProvider, useSessionContext } from "./store/session";
 import { apiGetPlaylist } from "./store/server-mock";
+import {suspend} from "suspend-react";
 
 function drawLabel(
 	context: CanvasRenderingContext2D,
@@ -81,8 +83,6 @@ function drawLabel(
 }
 
 function GraphContainer() {
-	const [dataset, setDataset] = useState<SongData[] | null>(null);
-	const [dataReady, setDataReady] = useState(false);
 	const [graph, setGraph] = useState<Graph | null>(null);
 	const [hoveredNode, setHoveredNode] = useState<string | null>(null);
 	const [showDataPanel, setShowDataPanel] = useState(false);
@@ -91,6 +91,9 @@ function GraphContainer() {
 	const [tagsUniversesRatio, setTagsUniversesRatio] = useState(50);
 	const { isConnected, addSongToSesh, playedSongsIds, currentSongId } =
 		useSessionContext();
+		
+
+	const dataset = suspend(apiGetPlaylist);
 
 	useEffect(() => {
 		if (graph) {
@@ -113,22 +116,26 @@ function GraphContainer() {
 		}
 	}, [graph, playedSongsIds, currentSongId]);
 
-	// Load data on mount:
 	useEffect(() => {
-		apiGetPlaylist().then((dataset: SongData[]) => {
-			setDataset(dataset);
-			requestAnimationFrame(() => setDataReady(true));
+		const graph = getGraph(dataset, { showTransitions, tagsUniversesRatio });
+		circular.assign(graph);
 
-			const graph = getGraph(dataset, { showTransitions, tagsUniversesRatio });
-			circular.assign(graph);
-			const settings = forceAtlas2.inferSettings(graph);
-			forceAtlas2.assign(graph, { settings, iterations: 600 });
+		const settings = forceAtlas2.inferSettings(graph);
 
-			setGraph(graph);
+		const layout = new FA2Layout(graph, {
+			settings
 		});
+
+		layout.start();
+
+		setTimeout(() => {
+			layout.stop();
+		}, 2000)
+
+		setGraph(graph);
 	}, [showTransitions, tagsUniversesRatio]);
 
-	if (!dataset || !graph) return null;
+	if (!graph) return null;
 
 	const hoveredAttributes = hoveredNode
 		? graph.getNodeAttributes(hoveredNode)
@@ -166,16 +173,7 @@ function GraphContainer() {
 			>
 				<GraphEventsController setHoveredNode={setHoveredNode} />
 				<GraphSettingsController hoveredNode={hoveredNode} />
-				{dataReady && (
 					<>
-						{/*<div className="controls" style={{ position: "absolute", left: 0, top: 0 }}>
-              <FullScreenControl
-                className="ico"
-              />
-              <ZoomControl
-                className="ico"
-              />
-        </div>*/}
 						<div
 							style={{
 								position: "absolute",
@@ -369,7 +367,6 @@ function GraphContainer() {
 							/>
 						)}
 					</>
-				)}
 			</SigmaContainer>
 		</div>
 	);

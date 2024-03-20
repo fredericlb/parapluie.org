@@ -13,41 +13,33 @@
     "id": "df708f5fa5a852845f8fcae7c371cf6b",
     "key": "3B",
     "language": "FR",
+    "tags": [
+      "Final"
+    ],
     "title": "La Bamba Triste",
+    "universe": "Les options",
     "year": 1986
   },
   {
-    "albumart": "art_9498041a58d38123b358f104a031406e.jpg",
-    "artist": "Dead Or Alive",
-    "bpm": 130.0,
-    "duration": 472.009725,
-    "energylevel": "7",
-    "file": "Dead Or Alive - You Spin Me Around (Original).mp3",
+    "albumart": "art_ea3f263487fe4ba155f9a4f5b00c5e09.jpg",
+    "artist": "Desireless",
+    "bpm": 124.0,
+    "duration": 261.62166666666667,
+    "energylevel": "6",
+    "file": "Desireless - Voyage Voyage.mp3",
     "genres": [
+      "Chanson",
       "NewWave"
     ],
-    "id": "9498041a58d38123b358f104a031406e",
-    "key": "11A",
-    "language": "US",
-    "title": "You Spin Me Around (Original)",
-    "year": 1984
-  },
-  {
-    "albumart": "art_58a9bc7a146c94b1f5db109b6b6ad7ca.jpg",
-    "artist": "Las Ketechup",
-    "bpm": 93.0,
-    "duration": 209.661975,
-    "energylevel": "7",
-    "file": "Las Ketechup - The Ketchup Song.mp3",
-    "genres": [
-      "World",
-      "Latin"
+    "id": "ea3f263487fe4ba155f9a4f5b00c5e09",
+    "key": "1A",
+    "language": "FR",
+    "title": "Voyage Voyage",
+    "transitions": [
+      "Haddaway - What Is Love (Extended Mix By Fuvi Clan)"
     ],
-    "id": "58a9bc7a146c94b1f5db109b6b6ad7ca",
-    "key": "2A",
-    "language": "ESP",
-    "title": "The Ketchup Song",
-    "year": 2002
+    "universe": "80s_2",
+    "year": 1987
   },
   {
     "albumart": "art_7f80ba06263f344ed38d2061b5cac98c.jpg",
@@ -63,7 +55,28 @@
     "key": "8A",
     "language": "FR",
     "title": "La Fièvre (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Diam's - La Boulette"
+    ],
+    "universe": "RapFr",
     "year": 1995
+  },
+  {
+    "albumart": "art_33e53d26f3fd468cbcee73daae469171.jpg",
+    "artist": "Philippe Lafontaine",
+    "bpm": 95.0,
+    "duration": 220.2201875,
+    "energylevel": "5",
+    "file": "Philippe Lafontaine - Coeur de Loup.mp3",
+    "genres": [
+      "Chanson"
+    ],
+    "id": "33e53d26f3fd468cbcee73daae469171",
+    "key": "10A",
+    "language": "FR",
+    "title": "Coeur de Loup",
+    "universe": "Fr_2",
+    "year": 1989
   },
   {
     "albumart": "art_22ada24d1b7510395ef14c6943ddd77d.jpg",
@@ -78,11 +91,15 @@
     "id": "22ada24d1b7510395ef14c6943ddd77d",
     "key": "6A",
     "language": "EN",
+    "tags": [
+      "Hub"
+    ],
     "title": "Jealousy (Club Mix)",
     "transitions": [
       "Daft Punk & Pharrell Williams - Lose Yourself to Dance",
       "Gloria Estefan - Conga (Extended Mix)"
     ],
+    "universe": "Funk_2",
     "year": 2006
   },
   {
@@ -100,6 +117,10 @@
     "key": "11A",
     "language": "FR",
     "title": "J'aimerais trop (Extended Mix)",
+    "transitions": [
+      "Mika - Relax , Take It Easy (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Exotic",
     "year": 2011
   },
   {
@@ -119,6 +140,7 @@
     "transitions": [
       "Moloko - Sing It Back  (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Lounge",
     "year": 2006
   },
   {
@@ -136,6 +158,10 @@
     "key": "1A",
     "language": "US",
     "title": "The Way I Are (Extended Version)",
+    "transitions": [
+      "Justin Timberlake;Timbaland - SexyBack"
+    ],
+    "universe": "00s_1",
     "year": 2007
   },
   {
@@ -153,6 +179,10 @@
     "language": "US",
     "replaygain_track_gain": "-9.1",
     "title": "I Know You Want Me (Calle Ocho)",
+    "transitions": [
+      "Madcon - Beggin (Extended Version)"
+    ],
+    "universe": "Sensual",
     "year": 2017
   },
   {
@@ -170,8 +200,10 @@
     "language": "US",
     "title": "Lady Marmelade (Extended Mix By Fuvi Clan)",
     "transitions": [
-      "Blondie - Heart Of Glass (Extended Mix By Fuvi Clan)"
+      "Blondie - Heart Of Glass (Extended Mix By Fuvi Clan)",
+      "Britney Spears - I'm A Slave 4 U"
     ],
+    "universe": "00s_2",
     "year": 2001
   },
   {
@@ -188,6 +220,11 @@
     "key": "12A",
     "language": "US",
     "title": "La Isla Bonita (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Diam's - La Boulette",
+      "Shined on Me - Praise Cats "
+    ],
+    "universe": "80s_1",
     "year": 1987
   },
   {
@@ -205,9 +242,66 @@
     "language": "FR",
     "title": "Les Démons De Minuit (Extended Mix By Fuvi Clan)",
     "transitions": [
-      "Calvin Harris - Acceptable in the 80's"
+      "Calvin Harris - Acceptable in the 80's",
+      "Dalida - Laissez Moi Danser (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Special",
     "year": 1987
+  },
+  {
+    "albumart": "art_1e409fab27cbf00c940bcef64a72cdbc.jpg",
+    "artist": "50 Cents",
+    "bpm": 79.0,
+    "duration": 252.6904375,
+    "energylevel": "7",
+    "file": "50 Cents - P.I.M.P.mp3",
+    "genres": [
+      "Rap"
+    ],
+    "id": "1e409fab27cbf00c940bcef64a72cdbc",
+    "key": "3A",
+    "language": "US",
+    "title": "P.I.M.P",
+    "universe": "Rap",
+    "year": 2003
+  },
+  {
+    "albumart": "art_c64755f67f87fc7888c514b8f60b52ce.jpg",
+    "artist": "Gilbert Montagné",
+    "bpm": 126.0,
+    "duration": 231.48,
+    "energylevel": "6",
+    "file": "Gilbert Montagné - Le sunlight des tropiques.mp3",
+    "genres": [
+      "Chanson"
+    ],
+    "id": "c64755f67f87fc7888c514b8f60b52ce",
+    "key": "6B",
+    "language": "FR",
+    "title": "Le sunlight des tropiques",
+    "transitions": [
+      "Desireless - Voyage Voyage"
+    ],
+    "universe": "Kitsh",
+    "year": 1984
+  },
+  {
+    "albumart": "art_aac65f4d3b98cdf6772929f1d7d10686.jpg",
+    "artist": "Juliette Armanet",
+    "bpm": 142.0,
+    "duration": 207.49333333333334,
+    "energylevel": "7",
+    "file": "Juliette Armanet - Le Dernier Jour du Disco.mp3",
+    "genres": [
+      "Chanson",
+      "Disco"
+    ],
+    "id": "aac65f4d3b98cdf6772929f1d7d10686",
+    "key": "6A",
+    "language": "FR",
+    "title": "Le Dernier Jour du Disco",
+    "universe": "Disco_3",
+    "year": 2021
   },
   {
     "albumart": "art_7a1dc1d73e58c6cd2aa4210b8eea3da9.jpg",
@@ -223,6 +317,7 @@
     "key": "10A",
     "language": "EN",
     "title": "Get The Party Started (Extended Mix By Fuvi Clan)",
+    "universe": "00s_1",
     "year": 2002
   },
   {
@@ -239,6 +334,10 @@
     "key": "2B",
     "language": "US",
     "title": "I Wanna Dance With Somebody (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Lizzo - Juice (Intro Clean)"
+    ],
+    "universe": "80s_2",
     "year": 1987
   },
   {
@@ -255,6 +354,11 @@
     "key": "9B",
     "language": "US",
     "title": "Acceptable in the 80's",
+    "transitions": [
+      "Émile Et Image - Les Démons De Minuit (Extended Mix By Fuvi Clan)",
+      "Discobitch - C'est Beau La Bourgeoisie (Extended French Mix)"
+    ],
+    "universe": "Special",
     "year": 2007
   },
   {
@@ -275,6 +379,7 @@
       "Bob Sinclar - Rock This Party (Radio Edit)",
       "Pitbull - I Know You Want Me (Calle Ocho)"
     ],
+    "universe": "Hardcore",
     "year": 2005
   },
   {
@@ -291,6 +396,10 @@
     "key": "11A",
     "language": "SPA",
     "title": "La Camisa Negra (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Madonna - La Isla Bonita (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Latin_2",
     "year": 2005
   },
   {
@@ -308,6 +417,10 @@
     "key": "8B",
     "language": "FR",
     "title": "Ces Soirées Là (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Shaggy Feat. Brian & Tony Gold - Hey Sexy Lady (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Kitsh",
     "year": 2000
   },
   {
@@ -324,6 +437,10 @@
     "key": "5A",
     "language": "US",
     "title": "Toxic (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Black Eyed Peas - Pump It (Extended Version)"
+    ],
+    "universe": "00s_3",
     "year": 2004
   },
   {
@@ -347,6 +464,7 @@
     "transitions": [
       "Cardi B Ft. Bad Bunny & J Balvin - I Like It (Extended Mix)"
     ],
+    "universe": "Disco_5",
     "year": 2007
   },
   {
@@ -364,6 +482,7 @@
     "key": "10A",
     "language": "FR",
     "title": "La Grenade (Extended Mix By Fuvi Clan)",
+    "universe": "Disco_3",
     "year": 2018
   },
   {
@@ -381,23 +500,53 @@
     "key": "11A",
     "language": "US",
     "title": "Cosmic Girl (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Chic - Le Freak (Extended Mix By Fuvi Clan)",
+      "Estelle - American Boy (Extended Mix By Fuvi Clan)",
+      "Queen - Another One Bites the Dust"
+    ],
+    "universe": "Disco_1",
     "year": 1996
   },
   {
-    "albumart": "art_b9581cb3b82d8059a0415d1d34e85fb1.jpg",
-    "artist": "Philippe Lafontaine",
-    "bpm": 96.0,
-    "duration": 328.7281,
+    "albumart": "art_6ac7e400de68382f6e38991a0e83b86b.jpg",
+    "artist": "La Compagnie Créole",
+    "bpm": 126.0,
+    "duration": 263.02666666666664,
     "energylevel": "6",
-    "file": "Philippe Lafontaine - Coeur De Loup (Extended Mix By Fuvi Clan).mp3",
+    "file": "La Compagnie Créole - Le Medley.mp3",
     "genres": [
-      "Mainstream"
+      "World"
     ],
-    "id": "b9581cb3b82d8059a0415d1d34e85fb1",
-    "key": "11A",
+    "id": "6ac7e400de68382f6e38991a0e83b86b",
+    "key": "8B",
     "language": "FR",
-    "title": "Coeur De Loup (Extended Mix By Fuvi Clan)",
-    "year": 1989
+    "title": "Le Medley",
+    "transitions": [
+      "Zouk Machine - Maldon (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Exotic",
+    "year": 1985
+  },
+  {
+    "albumart": "art_556d4c7c3050abf1b6dc84ebcc1de587.jpg",
+    "artist": "Rita Mitsouko",
+    "bpm": 127.0,
+    "duration": 335.159,
+    "energylevel": "8",
+    "file": "Rita Mitsouko - Marcia Baila.mp3",
+    "genres": [
+      "Chanson"
+    ],
+    "id": "556d4c7c3050abf1b6dc84ebcc1de587",
+    "key": "9B",
+    "language": "FR",
+    "title": "Marcia Baila",
+    "transitions": [
+      "Sapé comme jamais - Maitre Gims"
+    ],
+    "universe": "Fr_2",
+    "year": 1984
   },
   {
     "albumart": "art_dac08d41be52195f142aef9e31786072.jpg",
@@ -416,7 +565,35 @@
       "Berfin"
     ],
     "title": "Sen trope",
+    "transitions": [
+      "Shakira - Objection (Tango)",
+      "Rihanna ft Jay Z - Umbrella (Extended Version)"
+    ],
+    "universe": "Orient",
     "year": 2012
+  },
+  {
+    "albumart": "art_cf84d337fe50c70df733d56a700acbe2.jpg",
+    "artist": "Dona Summer",
+    "bpm": 120.0,
+    "duration": 228.303875,
+    "energylevel": "7",
+    "file": "Dona Summer - Hot stuff.mp3",
+    "genres": [
+      "Disco"
+    ],
+    "id": "cf84d337fe50c70df733d56a700acbe2",
+    "key": "8B",
+    "language": "US",
+    "replaygain_track_gain": "-0.56 dB",
+    "replaygain_track_peak": "0.530294",
+    "title": "Hot stuff",
+    "transitions": [
+      "ABBA - Gimme ! Gimme ! GImme",
+      "Whitney Houston - I Wanna Dance With Somebody (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Disco_4",
+    "year": 1979
   },
   {
     "albumart": "art_8e5aa433fe7970666d4c145995ec26a0.jpg",
@@ -433,8 +610,10 @@
     "language": "EN",
     "title": "Let's All Chant (Extended Mix By Fuvi Clan)",
     "transitions": [
-      "Boney M - Daddy Cool (Extended Mix By Fuvi Clan)"
+      "Boney M - Daddy Cool (Extended Mix By Fuvi Clan)",
+      "Boney M - Rasputin"
     ],
+    "universe": "Disco_2",
     "year": 1977
   },
   {
@@ -457,28 +636,13 @@
     "style": "Disco",
     "title": "I Feel Love",
     "transitions": [
-      "Sylvester - You Make Me Feel (Extended Mix)"
+      "Sylvester - You Make Me Feel (Extended Mix)",
+      "Saïan Supa Crew - Angela",
+      "Blondie - Heart Of Glass (Extended Mix By Fuvi Clan)",
+      "Dona Summer - Hot stuff"
     ],
+    "universe": "Disco_2",
     "year": 1987
-  },
-  {
-    "albumart": "art_95112b543bc8ac55f5bc7f4c7446279c.jpg",
-    "artist": "Donna Summer",
-    "bpm": 120.0,
-    "duration": 407.0693,
-    "energylevel": "7",
-    "file": "Donna Summer - Hot Stuff (Extended Mix).mp3",
-    "genres": [
-      "Disco"
-    ],
-    "id": "95112b543bc8ac55f5bc7f4c7446279c",
-    "key": "6A",
-    "language": "US",
-    "title": "Hot Stuff (Extended Mix)",
-    "transitions": [
-      "ABBA - Gimme ! Gimme ! GImme"
-    ],
-    "year": 1979
   },
   {
     "artist": "Pitbull & John Ryan",
@@ -495,24 +659,34 @@
     "language": "US",
     "replaygain_track_gain": "-9.2",
     "title": "Fireball",
+    "transitions": [
+      "Lykke Li - I Follow Rivers (The Magician Mix)"
+    ],
+    "universe": "Latin_4",
     "year": 2017
   },
   {
-    "albumart": "art_1ce7108633572edfb4c00485de53b652.jpg",
-    "artist": "Beyonce feat. Jay-Z",
-    "bpm": 99.0,
-    "duration": 266.635025,
-    "energylevel": "7",
-    "file": "Beyonce feat. Jay-Z - Crazy In Love (Extended Version).mp3",
+    "albumart": "art_526bd7b22c7ee1e29cf3cdf81fbea231.jpg",
+    "artist": "Sapé comme jamais",
+    "bpm": 120.0,
+    "duration": 192.896,
+    "energylevel": "8",
+    "file": "Sapé comme jamais - Maitre Gims.mp3",
     "genres": [
       "Mainstream",
-      "RnB"
+      "House"
     ],
-    "id": "1ce7108633572edfb4c00485de53b652",
-    "key": "6A",
-    "language": "US",
-    "title": "Crazy In Love (Extended Version)",
-    "year": 2003
+    "id": "526bd7b22c7ee1e29cf3cdf81fbea231",
+    "key": "11A",
+    "language": "FR",
+    "title": "Maitre Gims",
+    "transitions": [
+      "M - Machistador (Extended Mix By Fuvi Clan)",
+      "Keen'V - J'aimerais trop (Extended Mix)",
+      "Claude Francois - Alexandrie Alexandra (Original)"
+    ],
+    "universe": "RnB_2",
+    "year": 2015
   },
   {
     "albumart": "art_e0ab86e9177bdc3df25ea3f0ae0176d5.jpg",
@@ -528,6 +702,10 @@
     "key": "6A",
     "language": "US",
     "title": "SexyBack",
+    "transitions": [
+      "Christina Aguilera - Lady Marmelade (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Sensual",
     "year": 2006
   },
   {
@@ -544,6 +722,10 @@
     "key": "8A",
     "language": "SPA",
     "title": "Maria Maria (Extended Version)",
+    "transitions": [
+      "Tarkan - Simarik (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Latin_4",
     "year": 2000
   },
   {
@@ -560,6 +742,10 @@
     "key": "10A",
     "language": "EN",
     "title": "Sexy Bitch",
+    "transitions": [
+      "Keen'V - J'aimerais trop (Extended Mix)"
+    ],
+    "universe": "Hub",
     "year": 2009
   },
   {
@@ -576,6 +762,10 @@
     "key": "10A",
     "language": "SPA",
     "title": "Soy Yo",
+    "transitions": [
+      "Aventura - Obsesion (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Latin_1",
     "year": 2015
   },
   {
@@ -592,7 +782,33 @@
     "key": "8A",
     "language": "TRK",
     "title": "Simarik (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Aya Nakamura - Pookie (Extended Mix By Fuvi Clan)",
+      "Juanes - La Camisa Negra (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Orient",
     "year": 1997
+  },
+  {
+    "albumart": "art_b3e9e530316f64b52ab2e2cffbd1030f.jpg",
+    "artist": "Patrick Sebastien",
+    "bpm": 131.0,
+    "duration": 200.49755102040817,
+    "energylevel": "6",
+    "file": "Patrick Sebastien -  Pourvu Que Ça Dure.mp3",
+    "genres": [
+      "Kitsh",
+      "Chanson"
+    ],
+    "id": "b3e9e530316f64b52ab2e2cffbd1030f",
+    "key": "4A",
+    "language": "FR",
+    "tags": [
+      "Kitsh"
+    ],
+    "title": "Pourvu Que Ça Dure",
+    "universe": "Les options",
+    "year": 2005
   },
   {
     "artist": "The Supermen Lovers/Mani Hoffman",
@@ -608,6 +824,10 @@
     "key": "8B",
     "language": "EN",
     "title": "Starlight",
+    "transitions": [
+      "Calvin Harris - Acceptable in the 80's"
+    ],
+    "universe": "Start",
     "year": 2001
   },
   {
@@ -629,6 +849,7 @@
     "transitions": [
       "Estelle - American Boy (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Hub",
     "year": 2010
   },
   {
@@ -648,6 +869,7 @@
     "transitions": [
       "Tom Jones - Sexbomb"
     ],
+    "universe": "Disco_3",
     "year": 1978
   },
   {
@@ -682,26 +904,11 @@
     "script": "Latn",
     "title": "Another One Bites the Dust",
     "transitions": [
-      "Bee Gees - Stayin' Alive (Extended)"
+      "Bee Gees - Stayin' Alive (Extended)",
+      "Indeep - Last Night A DJ Saved My Life "
     ],
+    "universe": "Funk_2",
     "year": 1980
-  },
-  {
-    "albumart": "art_fba0b96372cad6896c9ad82a3a653eb6.jpg",
-    "artist": "Diana Ross",
-    "bpm": 107.0,
-    "duration": 300.568075,
-    "energylevel": "7",
-    "file": "Diana Ross - Upside Down (Extended Mix By Fuvi Clan).mp3",
-    "genres": [
-      "Disco",
-      "Funk"
-    ],
-    "id": "fba0b96372cad6896c9ad82a3a653eb6",
-    "key": "6A",
-    "language": "US",
-    "title": "Upside Down (Extended Mix By Fuvi Clan)",
-    "year": 2022
   },
   {
     "albumart": "art_e65434d208e0192553add617787efa49.jpg",
@@ -721,8 +928,10 @@
     "style": "House",
     "title": "One More Time",
     "transitions": [
-      "Modjo - Lady (Extended Mix By Fuvi Clan)"
+      "Modjo - Lady (Extended Mix By Fuvi Clan)",
+      "Cassius - Toop Toop (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "FrenchTouch",
     "year": 2001
   },
   {
@@ -733,13 +942,34 @@
     "energylevel": "7",
     "file": "Rednex - Cotton Eye Joe.mp3",
     "genres": [
-      "Kitsch"
+      "Kitsh"
     ],
     "id": "6a11cd037a015f143530cd08a803fab2",
     "key": "11B",
     "language": "EN",
     "title": "Cotton Eye Joe",
+    "transitions": [
+      "Donna Summer - I Feel Love"
+    ],
+    "universe": "WeddingClassics",
     "year": 1994
+  },
+  {
+    "artist": "Beyoncé/JAY-Z",
+    "bpm": 99.0,
+    "duration": 236.16,
+    "energylevel": "8",
+    "file": "Beyoncé_JAY-Z - Crazy In Love .mp3",
+    "genres": [
+      "Pop",
+      "Mainstream"
+    ],
+    "id": "8874fb3a4cbd0a4a002dddc774998a85",
+    "key": "7A",
+    "language": "US",
+    "title": "Crazy In Love",
+    "universe": "RnB_1",
+    "year": 2003
   },
   {
     "albumart": "art_db44ee50a5a55d6601a1466b98d15659.jpg",
@@ -755,6 +985,10 @@
     "key": "4A",
     "language": "US",
     "title": "Call On Me (Radio Edit)",
+    "transitions": [
+      "Alex Gaudino & Crystal Waters - Destination Calabria"
+    ],
+    "universe": "Hub",
     "year": 2004
   },
   {
@@ -778,6 +1012,7 @@
       "90s"
     ],
     "title": "Barbie girl",
+    "universe": "Kitsh",
     "year": 1997
   },
   {
@@ -795,6 +1030,7 @@
     "key": "4A",
     "language": "EN",
     "title": "Stayin' Alive (Extended)",
+    "universe": "Disco_4",
     "year": 1977
   },
   {
@@ -811,6 +1047,10 @@
     "key": "10A",
     "language": "FR",
     "title": "Moi Lolita (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Stromae - Tous Les Mêmes (Extended Mix)"
+    ],
+    "universe": "ClassicsFr",
     "year": 2000
   },
   {
@@ -830,6 +1070,10 @@
       "90s"
     ],
     "title": "Sexbomb",
+    "transitions": [
+      "Moloko - Sing It Back  (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "WeddingClassics",
     "year": 1999
   },
   {
@@ -847,9 +1091,33 @@
     "language": "FR",
     "title": "Nuit De Folie (Extended Mix By Fuvi Clan)",
     "transitions": [
-      "Mika - Relax , Take It Easy (Extended Mix By Fuvi Clan)"
+      "Mika - Relax , Take It Easy (Extended Mix By Fuvi Clan)",
+      "Chris Andersson & Dj Robbie - Last Night (Original)"
     ],
+    "universe": "Fr_1",
     "year": 1988
+  },
+  {
+    "albumart": "art_efe15429b516d76dbe2408f5f060d399.jpg",
+    "artist": "Soha, Antoine Essertier",
+    "bpm": 80.0,
+    "compatible_brands": "isomav01iso2mp41",
+    "description": "Provided to YouTube by Parlophone (France)\n\nMil pasos (feat. Antoine Essertier) · Soha · Antoine Essertier\n\nD'ici Et D'ailleurs\n\n℗ 2007 Parlophone / Warner Music France, a Warner Music Group Company\n\nVocals: Antoine Essertier\nVocals: Soha\nComposer: Antoine Essertier\nComposer: François Welgryn\nComposer: Soha\n\nAuto-generated by YouTube.",
+    "duration": 246.96163265306123,
+    "energylevel": "4",
+    "file": "Soha, Antoine Essertier - Mil pasos (feat. Antoine Essertier).mp3",
+    "genres": [
+      "RnB"
+    ],
+    "id": "efe15429b516d76dbe2408f5f060d399",
+    "key": "8A",
+    "language": "FR",
+    "major_brand": "isom",
+    "minor_version": "512",
+    "synopsis": "Provided to YouTube by Parlophone (France)\n\nMil pasos (feat. Antoine Essertier) · Soha · Antoine Essertier\n\nD'ici Et D'ailleurs\n\n℗ 2007 Parlophone / Warner Music France, a Warner Music Group Company\n\nVocals: Antoine Essertier\nVocals: Soha\nComposer: Antoine Essertier\nComposer: François Welgryn\nComposer: Soha\n\nAuto-generated by YouTube.",
+    "title": "Mil pasos (feat. Antoine Essertier)",
+    "universe": "Start",
+    "year": 2014
   },
   {
     "albumart": "art_3935b9d02c9f4c9922f7683723cc6806.jpg",
@@ -868,6 +1136,10 @@
       "Mariage"
     ],
     "title": "Last Night (Original)",
+    "transitions": [
+      "Tom Jones - Sexbomb"
+    ],
+    "universe": "WeddingClassics",
     "year": 2000
   },
   {
@@ -885,8 +1157,10 @@
     "language": "US",
     "title": "You Make Me Feel (Extended Mix)",
     "transitions": [
-      "Geri Halliwell - It's Raining Men"
+      "Geri Halliwell - It's Raining Men",
+      "Martin Solveig - Jealousy (Club Mix)"
     ],
+    "universe": "Disco_5",
     "year": 1978
   },
   {
@@ -905,8 +1179,11 @@
     "language": "FR",
     "title": "Pookie (Extended Mix By Fuvi Clan)",
     "transitions": [
-      "Rachid Taha - Ya Rayah (Extended Mix By Fuvi Clan)"
+      "Rachid Taha - Ya Rayah (Extended Mix By Fuvi Clan)",
+      "Daddy Yankee - Gasolina (Extended Version)",
+      "Madonna - La Isla Bonita (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Orient",
     "year": 2019
   },
   {
@@ -924,8 +1201,10 @@
     "language": "FR",
     "title": "Alexandrie Alexandra (Original)",
     "transitions": [
-      "Stromae - Alors on danse"
+      "Stromae - Alors on danse",
+      "Boney M - Rasputin"
     ],
+    "universe": "ClassicsFr",
     "year": 1978
   },
   {
@@ -943,6 +1222,10 @@
     "key": "7A",
     "language": "US",
     "title": "Juice (Intro Clean)",
+    "transitions": [
+      "Mark Ronson Ft. Bruno Mars - Uptown Funk (Extended Mix)"
+    ],
+    "universe": "Funk_1",
     "year": 2019
   },
   {
@@ -960,8 +1243,11 @@
     "title": "Love Don't Let Me Go",
     "transitions": [
       "Discobitch - C'est Beau La Bourgeoisie (Extended French Mix)",
-      "Émile Et Image - Les Démons De Minuit (Extended Mix By Fuvi Clan)"
+      "Émile Et Image - Les Démons De Minuit (Extended Mix By Fuvi Clan)",
+      "Boney M - Daddy Cool (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Special",
+    "vjing": "test-1",
     "year": 2002
   },
   {
@@ -982,6 +1268,7 @@
       "Bacquet"
     ],
     "title": "You're the one that i want",
+    "universe": "Movies",
     "year": 1978
   },
   {
@@ -1001,7 +1288,30 @@
     "transitions": [
       "Demon - You Are My High (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Lounge",
     "year": 1999
+  },
+  {
+    "albumart": "art_18f43589b1fbfcf4899fc009fa05cc1b.jpg",
+    "artist": "Madonna feat. Justin Timberlake & Timbaland",
+    "bpm": 113.0,
+    "disctotal": "2",
+    "duration": 189.7273469387755,
+    "energylevel": "8",
+    "file": "Madonna feat. Justin Timberlake & Timbaland - 4 Minutes.mp3",
+    "genres": [
+      "Mainstream"
+    ],
+    "id": "18f43589b1fbfcf4899fc009fa05cc1b",
+    "key": "10B",
+    "labelno": "9362-49729-6",
+    "language": "US",
+    "release date": "2009-09-18",
+    "releasecountry": "XE",
+    "title": "4 Minutes",
+    "tracktotal": "18",
+    "universe": "00s_3",
+    "year": 2009
   },
   {
     "albumart": "art_ec493179d330009e0eaa275b1522a0d5.jpg",
@@ -1018,6 +1328,10 @@
     "key": "7A",
     "language": "EN",
     "title": "Boogie Wonderland",
+    "transitions": [
+      "Boney M - Daddy Cool (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Disco_4",
     "year": 1979
   },
   {
@@ -1040,6 +1354,7 @@
     "transitions": [
       "The Notorious B.I.G - Hypnotize (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "RapFr",
     "year": 1994
   },
   {
@@ -1057,7 +1372,25 @@
     "key": "11A",
     "language": "US",
     "title": "No Diggity (Extended Version)",
+    "universe": "Rap",
     "year": 1996
+  },
+  {
+    "albumart": "art_0b3b2530b0a6e4c8a85215bb4399725d.jpg",
+    "artist": "Kaoma",
+    "bpm": 119.0,
+    "duration": 207.3144375,
+    "energylevel": "6",
+    "file": "Kaoma - Lambada.mp3",
+    "genres": [
+      "World"
+    ],
+    "id": "0b3b2530b0a6e4c8a85215bb4399725d",
+    "key": "7B",
+    "language": "POR",
+    "title": "Lambada",
+    "universe": "Latin_2",
+    "year": 1989
   },
   {
     "albumart": "art_c71a45513e5eb3c2897412085de3baa1.jpg",
@@ -1078,6 +1411,7 @@
       "Daft Punk - One More Time",
       "The Supermen Lovers, Mani Hoffman - Starlight"
     ],
+    "universe": "FrenchTouch",
     "year": 2020
   },
   {
@@ -1094,7 +1428,28 @@
     "key": "4A",
     "language": "FR",
     "title": "Tous Les Mêmes (Extended Mix)",
+    "transitions": [
+      "Elvis Crespo - Suavemente"
+    ],
+    "universe": "ClassicsFr",
     "year": 2014
+  },
+  {
+    "albumart": "art_95ae108133bcf00a47fd26e0bd2aa4cc.jpg",
+    "artist": "Diana Ross",
+    "bpm": 108.0,
+    "duration": 220.068,
+    "energylevel": "7",
+    "file": "Diana Ross - Upside Down.mp3",
+    "genres": [
+      "Disco"
+    ],
+    "id": "95ae108133bcf00a47fd26e0bd2aa4cc",
+    "key": "4A",
+    "language": "US",
+    "title": "Upside Down",
+    "universe": "Disco_4",
+    "year": 1980
   },
   {
     "albumart": "art_dfd8b3d65cfc3dd89863b7cd8a47f90a.jpg",
@@ -1113,6 +1468,7 @@
       "90s"
     ],
     "title": "Let Me Blow Ya Mind (Extended Mix By Fuvi Clan)",
+    "universe": "RnB_1",
     "year": 2001
   },
   {
@@ -1129,6 +1485,10 @@
     "key": "8A",
     "language": "US",
     "title": "Bad Romance (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Stromae - Alors on danse"
+    ],
+    "universe": "00s_2",
     "year": 2009
   },
   {
@@ -1152,6 +1512,7 @@
     "transitions": [
       "Billie Eilish - Bad Guy (Intro Clean)"
     ],
+    "universe": "Final",
     "year": 2004
   },
   {
@@ -1169,23 +1530,28 @@
     "key": "5A",
     "language": "US",
     "title": "Yeah (Extended Version)",
+    "universe": "00s_1",
     "year": 2004
   },
   {
-    "albumart": "art_63a97abb0ed6d61c1ac9f178d08dc595.jpg",
-    "artist": "Desireless",
-    "bpm": 125.0,
-    "duration": 353.2832,
-    "energylevel": "7",
-    "file": "Desireless - Voyage Voyage (Extended Mix By Fuvi Clan).mp3",
+    "albumart": "art_992ca909d4e63fd4d70fc418d1aaa5f4.jpg",
+    "artist": "Dead or Alive",
+    "bpm": 128.0,
+    "duration": 194.750875,
+    "energylevel": "8",
+    "file": "Dead or Alive - You Spin Me Around.mp3",
     "genres": [
-      "Synthpop"
+      "NewWave"
     ],
-    "id": "63a97abb0ed6d61c1ac9f178d08dc595",
-    "key": "1B",
-    "language": "FR",
-    "title": "Voyage Voyage (Extended Mix By Fuvi Clan)",
-    "year": 1986
+    "id": "992ca909d4e63fd4d70fc418d1aaa5f4",
+    "key": "11A",
+    "language": "US",
+    "title": "You Spin Me Around",
+    "transitions": [
+      "Clara Luciani - La Grenade (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "80s_2",
+    "year": 1983
   },
   {
     "albumart": "art_8e32c49daa59fa08e95fdd18d0e336eb.jpg",
@@ -1201,7 +1567,30 @@
     "key": "10B",
     "language": "EN",
     "title": "Born To Be Alive (Extended Version)",
+    "universe": "Disco_5",
     "year": 1979
+  },
+  {
+    "albumart": "art_d109f317624a1416703a78af82cab1dd.jpg",
+    "artist": "Alex Gaudino & Crystal Waters",
+    "bpm": 128.0,
+    "duration": 179.0987,
+    "energylevel": "9",
+    "file": "Alex Gaudino & Crystal Waters - Destination Calabria.mp3",
+    "genres": [
+      "House"
+    ],
+    "id": "d109f317624a1416703a78af82cab1dd",
+    "key": "10B",
+    "language": "EN",
+    "title": "Destination Calabria",
+    "transitions": [
+      "Lady Gaga - Bad Romance (Extended Mix By Fuvi Clan)",
+      "Paul Johnson - Get Get Down (Original Radio Version)",
+      "Gala - Freed From Desire (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Cunty",
+    "year": 2010
   },
   {
     "albumart": "art_d3f7c8d623c30fae1c01c3b0590deda5.jpg",
@@ -1218,8 +1607,10 @@
     "language": "FR",
     "title": "Machistador (Extended Mix By Fuvi Clan)",
     "transitions": [
-      "Queen - Another One Bites the Dust"
+      "Queen - Another One Bites the Dust",
+      "Gilbert Montagné - Le sunlight des tropiques"
     ],
+    "universe": "Fr_2",
     "year": 1998
   },
   {
@@ -1237,6 +1628,10 @@
     "key": "8A",
     "language": "US",
     "title": "Le Freak (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Martin Solveig - Jealousy (Club Mix)"
+    ],
+    "universe": "Disco_1",
     "year": 1978
   },
   {
@@ -1265,6 +1660,8 @@
     "originalyear": "2013",
     "script": "Latn",
     "title": "Lose Yourself to Dance",
+    "universe": "Funk_2",
+    "vjing": "test-2",
     "year": 2013
   },
   {
@@ -1284,6 +1681,7 @@
       "House"
     ],
     "title": "What Is Love (Extended Mix By Fuvi Clan)",
+    "universe": "90s",
     "year": 1993
   },
   {
@@ -1301,26 +1699,11 @@
     "language": "EN",
     "title": "C'est Beau La Bourgeoisie (Extended French Mix)",
     "transitions": [
-      "Queen - Another One Bites the Dust"
+      "Queen - Another One Bites the Dust",
+      "David Guetta - Love Don't Let Me Go"
     ],
+    "universe": "Special",
     "year": 2008
-  },
-  {
-    "albumart": "art_b1117f81b4060492b84f75f0771bcc38.jpg",
-    "artist": "Gilbert Montagné",
-    "bpm": 132.0,
-    "duration": 241.792575,
-    "energylevel": "7",
-    "file": "Gilbert Montagné - On Va S'aimer (Extended Mix By Fuvi Clan).mp3",
-    "genres": [
-      "Mainstream",
-      "Kitsh"
-    ],
-    "id": "b1117f81b4060492b84f75f0771bcc38",
-    "key": "8A",
-    "language": "FR",
-    "title": "On Va S'aimer (Extended Mix By Fuvi Clan)",
-    "year": 1983
   },
   {
     "albumart": "art_ebcab18502f9f1137893d2db5226ceff.jpg",
@@ -1337,6 +1720,7 @@
     "key": "7B",
     "language": "US",
     "title": "Hey Sexy Lady (Extended Mix By Fuvi Clan)",
+    "universe": "Latin_3",
     "year": 2002
   },
   {
@@ -1355,8 +1739,10 @@
     "language": "EN",
     "title": "Blind (Extended Mix By Fuvi Clan)",
     "transitions": [
-      "Stromae - Alors on danse"
+      "Stromae - Alors on danse",
+      "Dona Summer - Hot stuff"
     ],
+    "universe": "Disco_3",
     "year": 2008
   },
   {
@@ -1373,6 +1759,7 @@
     "key": "7A",
     "language": "US",
     "title": "Shut Up (Radio Edit)",
+    "universe": "RnB_2",
     "year": 2003
   },
   {
@@ -1389,7 +1776,26 @@
     "key": "9A",
     "language": "SPA",
     "title": "Conga (Extended Mix)",
+    "universe": "Latin_3",
     "year": 2001
+  },
+  {
+    "albumart": "art_bff29db66303ae23417ba9f5503179fc.jpg",
+    "artist": "La Rue Ketanou",
+    "bpm": 135.0,
+    "duration": 182.788,
+    "energylevel": "9",
+    "file": "La Rue Ketanou - Les hommes que j'aime - *REMIX* .mp3",
+    "genres": [
+      "Chanson",
+      "House"
+    ],
+    "id": "bff29db66303ae23417ba9f5503179fc",
+    "key": "7A",
+    "language": "FR",
+    "title": "Les hommes que j'aime *REMIX*",
+    "universe": "Final",
+    "year": 2002
   },
   {
     "albumart": "art_d2d04b372b00e6ddeb7bff494930c971.jpg",
@@ -1406,6 +1812,10 @@
     "key": "4A",
     "language": "SPA",
     "title": "Gasolina (Extended Version)",
+    "transitions": [
+      "Shakira Ft. Wyclef Jean - Hips Don't Lie (Radio Edit)"
+    ],
+    "universe": "Latin_3",
     "year": 2005
   },
   {
@@ -1422,6 +1832,10 @@
     "key": "4A",
     "language": "EN",
     "title": "Telephone (Radio Edit)",
+    "transitions": [
+      "Pitbull & John Ryan - Fireball"
+    ],
+    "universe": "Cunty",
     "year": 2010
   },
   {
@@ -1438,24 +1852,8 @@
     "key": "10A",
     "language": "SPA",
     "title": "Objection (Tango)",
+    "universe": "Latin_1",
     "year": 2001
-  },
-  {
-    "albumart": "art_a1c4f28cfccc54ab7160a94c8541aec6.jpg",
-    "artist": "Juliette Armanet",
-    "bpm": 142.0,
-    "duration": 243.386025,
-    "energylevel": "7",
-    "file": "Juliette Armanet - le Dernier Jour Du Disco (Extended Mix By Fuvi Clan).mp3",
-    "genres": [
-      "Chanson",
-      "Disco"
-    ],
-    "id": "a1c4f28cfccc54ab7160a94c8541aec6",
-    "key": "6A",
-    "language": "FR",
-    "title": "le Dernier Jour Du Disco (Extended Mix By Fuvi Clan)",
-    "year": 2021
   },
   {
     "albumart": "art_9d1719d0577c5703e6c824201a87327e.jpg",
@@ -1472,26 +1870,54 @@
     "key": "9A",
     "language": "US",
     "title": "Hypnotize (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Blackstreet ft Dr. Dre n Queen Pen - No Diggity (Extended Version)"
+    ],
+    "universe": "Rap",
     "year": 1997
   },
   {
-    "albumart": "art_3c99c568871d48307e643c4d6ceab884.jpg",
-    "artist": "Indeep",
-    "bpm": 110.0,
-    "duration": 281.3681,
+    "albumart": "art_c1ad14423d41264a6481aeb7c6ef0217.jpg",
+    "artist": "Thierry Hazard",
+    "bpm": 133.0,
+    "duration": 235.56,
     "energylevel": "7",
-    "file": "Indeep - Last Night a Dj Save my Life (Extended).mp3",
+    "file": "Thierry Hazard - Le Jerk.mp3",
     "genres": [
-      "Disco"
+      "Chanson"
     ],
-    "id": "3c99c568871d48307e643c4d6ceab884",
-    "key": "11A",
-    "language": "US",
-    "title": "Last Night a Dj Save my Life (Extended)",
+    "id": "c1ad14423d41264a6481aeb7c6ef0217",
+    "key": "6B",
+    "language": "FR",
+    "release type": "Normal release",
+    "rip date": "2009-12-21",
+    "ripping tool": "EAC",
+    "source": "CD (LP)",
+    "supplier": "",
+    "title": "Le Jerk",
     "transitions": [
-      "Queen - Another One Bites the Dust"
+      "Dead or Alive - You Spin Me Around"
     ],
-    "year": 1983
+    "universe": "Fr_1",
+    "year": 2009
+  },
+  {
+    "album artist": "Various Artists",
+    "albumart": "art_7dc01d945537395d0a3e30e9e9838358.jpg",
+    "artist": "Don Omar",
+    "bpm": 89.0,
+    "duration": 198.82115,
+    "energylevel": "9",
+    "file": "Don Omar - Danza Kuduro (feat. Lucenzo).mp3",
+    "genres": [
+      "Reggaeton"
+    ],
+    "id": "7dc01d945537395d0a3e30e9e9838358",
+    "key": "8B",
+    "language": "SPA",
+    "title": "Danza Kuduro (feat. Lucenzo)",
+    "universe": "Exotic",
+    "year": 2010
   },
   {
     "albumart": "art_106c9f6ddaccb2ae4f54e39b7ade7271.jpg",
@@ -1508,6 +1934,7 @@
     "key": "12B",
     "language": "FR",
     "title": "Ça, C'est Vraiment Toi (Extended Mix By Fuvi Clan)",
+    "universe": "Rock",
     "year": 1982
   },
   {
@@ -1525,6 +1952,7 @@
     "key": "3B",
     "language": "US",
     "title": "Umbrella (Extended Version)",
+    "universe": "00s_3",
     "year": 2007
   },
   {
@@ -1552,7 +1980,28 @@
     "transitions": [
       "M - Machistador (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Salsa",
     "year": 1999
+  },
+  {
+    "albumart": "art_796193711b1e4010d59544586433927c.jpg",
+    "artist": "Shined on Me",
+    "bpm": 132.0,
+    "duration": 336.6,
+    "energylevel": "8",
+    "file": "Shined on Me - Praise Cats .mp3",
+    "genres": [
+      "House"
+    ],
+    "id": "796193711b1e4010d59544586433927c",
+    "key": "3B",
+    "language": "EN",
+    "title": "Praise Cats",
+    "transitions": [
+      "David Guetta & Akon - Sexy Bitch"
+    ],
+    "universe": "Hub",
+    "year": 2002
   },
   {
     "albumart": "art_62d3c9782e6b2f1888d91df100beb929.jpg",
@@ -1569,6 +2018,10 @@
     "key": "2A",
     "language": "FR",
     "title": "Femme Like U (Extended Mix by Fuvi Clan)",
+    "transitions": [
+      "ABBA - Gimme ! Gimme ! GImme"
+    ],
+    "universe": "Sensual",
     "year": 2004
   },
   {
@@ -1586,6 +2039,10 @@
     "key": "12B",
     "language": "US",
     "title": "Heart Of Glass (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Sylvester - You Make Me Feel (Extended Mix)"
+    ],
+    "universe": "Rock",
     "year": 1978
   },
   {
@@ -1603,6 +2060,7 @@
     "key": "2A",
     "language": "US",
     "title": "Promiscuous (Extended Version)",
+    "universe": "00s_2",
     "year": 2006
   },
   {
@@ -1620,8 +2078,11 @@
     "language": "EN",
     "title": "Get Get Down (Original Radio Version)",
     "transitions": [
-      "Lykke Li - I Follow Rivers (The Magician Mix)"
+      "Lykke Li - I Follow Rivers (The Magician Mix)",
+      "Paul Johnson - Get Get Down (Original Radio Version)",
+      "Pitbull & John Ryan - Fireball"
     ],
+    "universe": "Hub",
     "year": 1999
   },
   {
@@ -1640,8 +2101,12 @@
     "language": "EN",
     "title": "Lady (Extended Mix By Fuvi Clan)",
     "transitions": [
-      "Martin Solveig - Jealousy (Club Mix)"
+      "Martin Solveig - Jealousy (Club Mix)",
+      "Clara Luciani - La Grenade (Extended Mix By Fuvi Clan)",
+      "Moloko - Sing It Back  (Extended Mix By Fuvi Clan)",
+      "Paul Johnson - Get Get Down (Original Radio Version)"
     ],
+    "universe": "FrenchTouch",
     "year": 2001
   },
   {
@@ -1662,6 +2127,7 @@
     "transitions": [
       "La Bouche - Be My Lover (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Hub",
     "year": 2019
   },
   {
@@ -1679,7 +2145,28 @@
     "key": "4B",
     "language": "SPA",
     "title": "Macarena (Original Mix)",
+    "transitions": [
+      "Francky Vincent - Fruit De La Passion (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "WeddingClassics",
     "year": 1996
+  },
+  {
+    "albumart": "art_1a704023517a0aae56898e0ce560c708.jpg",
+    "artist": "Indeep",
+    "bpm": 110.0,
+    "duration": 271.19337868480727,
+    "energylevel": "5",
+    "file": "Indeep - Last Night A DJ Saved My Life .mp3",
+    "genres": [
+      "Dance"
+    ],
+    "id": "1a704023517a0aae56898e0ce560c708",
+    "key": "1B",
+    "language": "US",
+    "title": "Last Night A DJ Saved My Life",
+    "universe": "Funk_1",
+    "year": 1991
   },
   {
     "albumart": "art_0ace1ede38cd9fd55cc0d312b9c6e814.jpg",
@@ -1696,8 +2183,10 @@
     "language": "US",
     "title": "Uptown Funk (Extended Mix)",
     "transitions": [
-      "SPLOUK"
+      "Martin Solveig - Jealousy (Club Mix)",
+      "50 Cents - P.I.M.P"
     ],
+    "universe": "Funk_1",
     "year": 2015
   },
   {
@@ -1721,6 +2210,7 @@
     "transitions": [
       "Crystal Waters - Gypsy Woman (Extended Mix by Fuvi Clan)"
     ],
+    "universe": "Cunty",
     "year": 1996
   },
   {
@@ -1738,6 +2228,10 @@
     "key": "6A",
     "language": "US",
     "title": "I'm So Excited (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "A-Ha - Take On Me (Extended Mix)"
+    ],
+    "universe": "Disco_5",
     "year": 1982
   },
   {
@@ -1755,6 +2249,10 @@
     "key": "7A",
     "language": "EN",
     "title": "Beggin (Extended Version)",
+    "transitions": [
+      "Earth Wind And Fire - Boogie Wonderland"
+    ],
+    "universe": "RnB_1",
     "year": 2007
   },
   {
@@ -1771,6 +2269,7 @@
     "key": "12A",
     "language": "SPA",
     "title": "Obsesion (Extended Mix By Fuvi Clan)",
+    "universe": "Latin_1",
     "year": 2003
   },
   {
@@ -1787,6 +2286,10 @@
     "key": "9A",
     "language": "US",
     "title": "American Boy (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Paul Johnson - Get Get Down (Original Radio Version)"
+    ],
+    "universe": "RnB_2",
     "year": 2008
   },
   {
@@ -1808,6 +2311,7 @@
       "Santana ft Product G&B - Maria Maria (Extended Version)",
       "Francky Vincent - Fruit De La Passion (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Latin_2",
     "year": 2006
   },
   {
@@ -1831,6 +2335,7 @@
       "Bacquet"
     ],
     "title": "La Boulette",
+    "universe": "RapFr",
     "year": 2006
   },
   {
@@ -1855,24 +2360,11 @@
       "Bacquet"
     ],
     "title": "Do You Love Me?",
-    "year": 1962
-  },
-  {
-    "albumart": "art_076fd9e215a1edd7c0c629228e780b8a.jpg",
-    "artist": "Breakbot Feat Outlines",
-    "bpm": 118.0,
-    "duration": 215.826875,
-    "energylevel": "6",
-    "file": "Breakbot Feat Outlines - Baby I'm Yours (Original).mp3",
-    "genres": [
-      "House",
-      "Disco"
+    "transitions": [
+      "Michael Sembello - Maniac (Extended Mix By Fuvi Clan)"
     ],
-    "id": "076fd9e215a1edd7c0c629228e780b8a",
-    "key": "7A",
-    "language": "EN",
-    "title": "Baby I'm Yours (Original)",
-    "year": 2010
+    "universe": "Movies",
+    "year": 1962
   },
   {
     "artist": "Nuttea",
@@ -1891,6 +2383,7 @@
       "Cringe"
     ],
     "title": "Elle te rend dingue",
+    "universe": "Kitsh",
     "year": 2000
   },
   {
@@ -1908,6 +2401,11 @@
     "key": "11B",
     "language": "SPA",
     "title": "Bailar",
+    "transitions": [
+      "Alex Gaudino & Crystal Waters - Destination Calabria",
+      "Rihanna - Where Have You Been (Album Version)"
+    ],
+    "universe": "Latin_3",
     "year": 2016
   },
   {
@@ -1928,6 +2426,7 @@
     "transitions": [
       "Christina Aguilera - Lady Marmelade (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Exotic",
     "year": 1994
   },
   {
@@ -1945,6 +2444,7 @@
     "key": "2A",
     "language": "US",
     "title": "Maniac (Extended Mix By Fuvi Clan)",
+    "universe": "80s_2",
     "year": 1983
   },
   {
@@ -1962,6 +2462,10 @@
     "key": "6A",
     "language": "EN",
     "title": "Makeba (Intro Clean)",
+    "transitions": [
+      "Alizée - Moi Lolita (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "Lounge",
     "year": 2016
   },
   {
@@ -1969,7 +2473,7 @@
     "artist": "Cassius",
     "bpm": 132.0,
     "duration": 210.915825,
-    "energylevel": "2006",
+    "energylevel": "6",
     "file": "Cassius - Toop Toop (Extended Mix By Fuvi Clan).mp3",
     "genres": [
       "House",
@@ -1979,7 +2483,11 @@
     "key": "10A",
     "language": "EN",
     "title": "Toop Toop (Extended Mix By Fuvi Clan)",
-    "year": 2022
+    "transitions": [
+      "Deorro & Elvis Crespo - Bailar"
+    ],
+    "universe": "Rock",
+    "year": 2006
   },
   {
     "albumart": "art_866812f598dbb51549d892060596c2fe.jpg",
@@ -2002,40 +2510,8 @@
     "transitions": [
       "The Contours - Do You Love Me?"
     ],
+    "universe": "Movies",
     "year": 2006
-  },
-  {
-    "albumart": "art_73a0724c1127ad4dc544ed4430bd4e62.jpg",
-    "artist": "Thierry Hazard",
-    "bpm": 132.0,
-    "duration": 270.892975,
-    "energylevel": "8",
-    "file": "Thierry Hazard - Le Jerk (Extended Mix By Fuvi Clan).mp3",
-    "genres": [
-      "Mainstream",
-      "Chanson"
-    ],
-    "id": "73a0724c1127ad4dc544ed4430bd4e62",
-    "key": "7B",
-    "language": "FR",
-    "title": "Le Jerk (Extended Mix By Fuvi Clan)",
-    "year": 1989
-  },
-  {
-    "albumart": "art_c52b4ec3506235e15609b25cc5ce7cde.jpg",
-    "artist": "50 Cent",
-    "bpm": 90.0,
-    "duration": 224.865225,
-    "energylevel": "6",
-    "file": "50 Cent - In Da Club (Extended Version).mp3",
-    "genres": [
-      "Rap"
-    ],
-    "id": "c52b4ec3506235e15609b25cc5ce7cde",
-    "key": "12A",
-    "language": "US",
-    "title": "In Da Club (Extended Version)",
-    "year": 2003
   },
   {
     "albumart": "art_ce4751b0a6e40b13ec7bf0fc3c028293.jpg",
@@ -2051,6 +2527,7 @@
     "key": "11B",
     "language": "EN",
     "title": "Take On Me (Extended Mix)",
+    "universe": "80s_1",
     "year": 1985
   },
   {
@@ -2068,7 +2545,34 @@
     "key": "10B",
     "language": "FR",
     "title": "Laissez Moi Danser (Extended Mix By Fuvi Clan)",
+    "transitions": [
+      "Earth Wind And Fire - Boogie Wonderland"
+    ],
+    "universe": "Disco_2",
     "year": 1979
+  },
+  {
+    "albumart": "art_8dfde6a037880c89a999bda715580cf9.jpg",
+    "artist": "Camila Cabello & Young Thug",
+    "bpm": 105.0,
+    "catalognumber": "19075819802",
+    "country": "Germany, Austria, & Switzerland",
+    "discogs_release_id": "11286650",
+    "duration": 216.9469387755102,
+    "energylevel": "5",
+    "file": "Camila Cabello & Young Thug - Havana.mp3",
+    "genres": [
+      "Latin"
+    ],
+    "id": "8dfde6a037880c89a999bda715580cf9",
+    "key": "10B",
+    "style": "Hip Hop, Contemporary R&B, Latin, Cubano",
+    "title": "Havana",
+    "transitions": [
+      "Usher feat. Lil Jon & Ludacris - Yeah (Extended Version)"
+    ],
+    "universe": "Latin_2",
+    "year": 2017
   },
   {
     "albumart": "art_7bcafd22cd39cacc13bd3e47f37791a0.jpg",
@@ -2090,8 +2594,11 @@
     "style": "Techno, Hard Trance",
     "title": "Satisfaction",
     "transitions": [
-      "Discobitch - C'est Beau La Bourgeoisie (Extended French Mix)"
+      "Discobitch - C'est Beau La Bourgeoisie (Extended French Mix)",
+      "Soft Cell - Tainted Love (Extended By Fuvi Clan)",
+      "Justin Timberlake;Timbaland - SexyBack"
     ],
+    "universe": "Hub",
     "year": 2003
   },
   {
@@ -2108,6 +2615,10 @@
     "key": "5A",
     "language": "EN",
     "title": "Tainted Love (Extended By Fuvi Clan)",
+    "transitions": [
+      "Britney Spears - Toxic (Extended Mix By Fuvi Clan)"
+    ],
+    "universe": "80s_1",
     "year": 1981
   },
   {
@@ -2124,6 +2635,7 @@
     "key": "1A",
     "language": "FR",
     "title": "Je T'emmène Au Vent (Extended Mix By Fuvi Clan)",
+    "universe": "Fr_1",
     "year": 1997
   },
   {
@@ -2141,6 +2653,7 @@
     "key": "6A",
     "language": "SPA",
     "title": "Maria",
+    "universe": "Latin_4",
     "year": 2014
   },
   {
@@ -2160,6 +2673,7 @@
       "Zouk"
     ],
     "title": "Maldon (Extended Mix By Fuvi Clan)",
+    "universe": "Exotic",
     "year": 1989
   },
   {
@@ -2180,24 +2694,11 @@
     "language": "US",
     "style": "RnB/Swing, Europop, Ballad",
     "title": "I'm A Slave 4 U",
-    "year": 2001
-  },
-  {
-    "albumart": "art_29f05d68891faea95765e77f6353b524.jpg",
-    "artist": "Les Rita Mitsouko",
-    "bpm": 128.0,
-    "duration": 316.737875,
-    "energylevel": "7",
-    "file": "Les Rita Mitsouko - Marcia Baila (Extended Mix By Fuvi Clan).mp3",
-    "genres": [
-      "NewWave",
-      "Chanson"
+    "transitions": [
+      "Technotronic - Pump Up The Jam"
     ],
-    "id": "29f05d68891faea95765e77f6353b524",
-    "key": "11B",
-    "language": "FR",
-    "title": "Marcia Baila (Extended Mix By Fuvi Clan)",
-    "year": 1984
+    "universe": "RnB_2",
+    "year": 2001
   },
   {
     "albumart": "art_48ff95bb9d9a0ed52b7cab118555ed42.jpg",
@@ -2214,23 +2715,12 @@
     "key": "7A",
     "language": "US",
     "title": "Gypsy Woman (Extended Mix by Fuvi Clan)",
-    "year": 1991
-  },
-  {
-    "albumart": "art_b44946571b80313b8a9150cdefcbd638.jpg",
-    "artist": "Eminem",
-    "bpm": 112.0,
-    "duration": 302.684,
-    "energylevel": "5",
-    "file": "Eminem - Without Me (Extended Mix By Fuvi Clan).mp3",
-    "genres": [
-      "Rap"
+    "transitions": [
+      "Paul Johnson - Get Get Down (Original Radio Version)",
+      "La Bouche - Be My Lover (Extended Mix By Fuvi Clan)"
     ],
-    "id": "b44946571b80313b8a9150cdefcbd638",
-    "key": "6A",
-    "language": "US",
-    "title": "Without Me (Extended Mix By Fuvi Clan)",
-    "year": 2019
+    "universe": "Cunty",
+    "year": 1991
   },
   {
     "artist": "Sexy Sushi",
@@ -2249,24 +2739,8 @@
       "Fin"
     ],
     "title": "Sex Appeal",
+    "universe": "Final",
     "year": 2008
-  },
-  {
-    "albumart": "art_94ac3576c5bdbceaed4202d6f4cbecd6.jpg",
-    "artist": "Saïan Supa Crew",
-    "bpm": 88.0,
-    "duration": 245.4236,
-    "energylevel": "6",
-    "file": "Saïan Supa Crew - Angela (Extended Mix By Fuvi Clan).mp3",
-    "genres": [
-      "Rap",
-      "World"
-    ],
-    "id": "94ac3576c5bdbceaed4202d6f4cbecd6",
-    "key": "1A",
-    "language": "FR",
-    "title": "Angela (Extended Mix By Fuvi Clan)",
-    "year": 1999
   },
   {
     "albumart": "art_57cacbe0aaf8df4782e7667216e2e6b1.jpg",
@@ -2282,6 +2756,7 @@
     "key": "1B",
     "language": "EN",
     "title": "Wannabe (Extended Mix By Fuvi Clan)",
+    "universe": "90s",
     "year": 1997
   },
   {
@@ -2304,39 +2779,8 @@
       "Salsa"
     ],
     "title": "Mala Vida",
+    "universe": "Salsa",
     "year": 2000
-  },
-  {
-    "albumart": "art_10e2643aca7c513958d3b9597b2418a0.jpg",
-    "artist": "Madonna ft Justin Timberlake n Timbaland",
-    "bpm": 113.0,
-    "duration": 204.5942,
-    "energylevel": "7",
-    "file": "Madonna ft Justin Timberlake n Timbaland - 4 Minutes (Extended Version).mp3",
-    "genres": [
-      "Rnb"
-    ],
-    "id": "10e2643aca7c513958d3b9597b2418a0",
-    "key": "6A",
-    "language": "US",
-    "title": "4 Minutes (Extended Version)",
-    "year": 2008
-  },
-  {
-    "albumart": "art_4e7a08bbc4bac9ba9adb8d863196ded8.jpg",
-    "artist": "50 Cent",
-    "bpm": 85.0,
-    "duration": 288.368875,
-    "energylevel": "6",
-    "file": "50 Cent - P.I.M.P (Extended Mix By Fuvi Clan).mp3",
-    "genres": [
-      "Rap"
-    ],
-    "id": "4e7a08bbc4bac9ba9adb8d863196ded8",
-    "key": "2A",
-    "language": "US",
-    "title": "P.I.M.P (Extended Mix By Fuvi Clan)",
-    "year": 2003
   },
   {
     "albumart": "art_79fc939f5b4c8064b2e1b82d6074113f.jpg",
@@ -2356,6 +2800,7 @@
     "language": "SPA",
     "style": "Samba, House",
     "title": "Samba De Janeiro",
+    "universe": "Latin_1",
     "year": 1997
   },
   {
@@ -2379,6 +2824,10 @@
       "90s"
     ],
     "title": "Pump Up The Jam",
+    "transitions": [
+      "Sapé comme jamais - Maitre Gims"
+    ],
+    "universe": "90s",
     "year": 1989
   },
   {
@@ -2397,8 +2846,10 @@
     "language": "US",
     "title": "Daddy Cool (Extended Mix By Fuvi Clan)",
     "transitions": [
-      "Chic - Le Freak (Extended Mix By Fuvi Clan)"
+      "Chic - Le Freak (Extended Mix By Fuvi Clan)",
+      "Téléphone - Ça, C'est Vraiment Toi (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Disco_2",
     "year": 1976
   },
   {
@@ -2415,6 +2866,12 @@
     "key": "11B",
     "language": "US",
     "title": "Rasputin",
+    "transitions": [
+      "Sylvester - You Make Me Feel (Extended Mix)",
+      "Earth Wind And Fire - Boogie Wonderland",
+      "Donna Summer - I Feel Love"
+    ],
+    "universe": "Disco_1",
     "year": 1978
   },
   {
@@ -2431,6 +2888,7 @@
     "key": "12A",
     "language": "EN",
     "title": "Be My Lover (Extended Mix By Fuvi Clan)",
+    "universe": "90s",
     "year": 1995
   },
   {
@@ -2449,8 +2907,10 @@
     "title": "Rock This Party (Radio Edit)",
     "transitions": [
       "Sean Paul - Temperature",
-      "Pitbull - I Know You Want Me (Calle Ocho)"
+      "Pitbull - I Know You Want Me (Calle Ocho)",
+      "Martin Solveig, GTA - Intoxicated (Original Mix)"
     ],
+    "universe": "Hardcore",
     "year": 2017
   },
   {
@@ -2472,8 +2932,9 @@
     ],
     "title": "I Like It (Extended Mix)",
     "transitions": [
-      "Juliette Armanet - le Dernier Jour Du Disco (Extended Mix By Fuvi Clan)"
+      "Juliette Armanet - Le Dernier Jour du Disco"
     ],
+    "universe": "Salsa",
     "year": 2018
   },
   {
@@ -2490,6 +2951,7 @@
     "key": "9B",
     "language": "FR",
     "title": "J'irai Où Tu Iras",
+    "universe": "ClassicsFr",
     "year": 1995
   },
   {
@@ -2507,8 +2969,9 @@
     "language": "EN",
     "title": "I Follow Rivers (The Magician Mix)",
     "transitions": [
-      "Crystal Waters - Gypsy Woman (Extended Mix by Fuvi Clan)"
+      "Lady Gaga - Bad Romance (Extended Mix By Fuvi Clan)"
     ],
+    "universe": "Hub",
     "year": 2011
   },
   {
@@ -2525,6 +2988,7 @@
     "key": "1B",
     "language": "FR",
     "title": "Angela",
+    "universe": "Sensual",
     "year": 1999
   },
   {
@@ -2542,7 +3006,7 @@
     "key": "7A",
     "language": "ARB",
     "title": "Ya Rayah (Extended Mix By Fuvi Clan)",
-    "universe": "FRED",
+    "universe": "Orient",
     "year": 1997
   },
   {
@@ -2560,6 +3024,7 @@
     "key": "5A",
     "language": "US",
     "title": "Where Have You Been (Album Version)",
+    "universe": "Hardcore",
     "year": 2011
   },
   {
@@ -2575,7 +3040,11 @@
     "id": "c2f5f3cfc68b3fe566a17bb4a74886e0",
     "key": "8A",
     "language": "EN",
+    "tags": [
+      "Hub"
+    ],
     "title": "Intoxicated (Original Mix)",
+    "universe": "Hub",
     "year": 2015
   },
   {
@@ -2593,6 +3062,7 @@
     "key": "10A",
     "language": "SPA",
     "title": "Despacito",
+    "universe": "Latin_4",
     "year": 2017
   }
 ]

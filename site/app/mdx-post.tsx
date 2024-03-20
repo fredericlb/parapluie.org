@@ -4,12 +4,18 @@ import Head from "next/head";
 import { MetadataContext } from "@/app/types";
 import Menu from "@/app/menu";
 import "./article.css";
+import dayjs from "dayjs";
+import { useTexts } from "@/texts";
+import { text } from "stream/consumers";
 
 const MdxPost: React.FC<{ metadata: MetadataContext; children: ReactNode }> = ({
 	metadata,
 	children,
 }) => {
-	const { locale, title, cover } = metadata;
+	const { locale, title, cover, publishDate } = metadata;
+	const date = dayjs(publishDate).format(locale === "fr" ? "DD/MM/YY" : "YYYY-MM-DD");
+	const texts = useTexts(locale);
+
 	return (
 		<RootLayout>
 			<Head>
@@ -29,6 +35,9 @@ const MdxPost: React.FC<{ metadata: MetadataContext; children: ReactNode }> = ({
 								className="object-cover h-full w-full"
 							/>
 						</figure>
+						<div className="text-right text-xs font-italic font-body mr-6 lg:mx-32 mt-1">
+							{texts.article.publish} {date}
+						</div>
 					</header>
 					<div className="article-body font-body lg:border-l-8 border-gray-800 pl-4 pt-2 pb-2 my-8 text-md lg:text-lg ml-2 mr-6 lg:mx-32">
 						{children}

@@ -1,0 +1,85 @@
+## Background
+
+Last summer my girlfriend and I were asked to be entertainers and DJs for a wedding. For the first part my charisma and natural eloquence were enough, but for the second it was a whole new challenge et we had to learn how to become good (wedding) DJs from the start. Apart from that there were two main obstacles :
+
+- How to sync with each other while sharing the turntable for hours ? 
+Was one of us going to play a song that the other considered
+essential for his transitions, and thus disappoint a previously charmed audience? 
+- Since it was only for one wedding, and since the only place where we could train was home, with only our 4 ears, how to write and save correctly all the transitions that we though were possible ? Because even if there is an optimal path going through all the songs we chose, we weren't naive enough to think the public would not ask for a specific song without taking care of the perfect transitions chain we initially planned. So we had to plan several transitions for a single song and watch out for those who would throw us off track. 
+
+But don't panic ! Thanks to my computer scientist powers and my will to turn everything into dataviz subjects, Didier was born (this is a french name that sounds a little like DJ, I am a funny guy). Didier is an UI that allowed us to 
+manage those issues. And thanks to him, our audience had a less disastrous
+evening than might be imagined.
+
+## Transitions and universes
+
+The visualisation UI takes the form of a graph and defines 3 types of links between songs : 
+
+- *Transition links*, going from a song to another ;
+- *Tags links*, linking song to a specific node corresponding to preselected tags (in our case: genre, decade and energy) ;
+- *Universes links*, also links to nodes but corresponding to a custom type of tag.
+
+*What are universes ?*
+
+If having a lot of links from songs to songs already allows us to progress,
+being able to subdivide this "work" in multiple subgroups make the task less difficult and above all easier to organize when the day comes. 
+Those subgroups are called "universes", and can contain up to 10 songs in which 
+we group those that plays well together with a given theme and with input/output songs connected to other universes.
+
+In some cases they match more or less with genres, but sometimes it's a matter
+of subjective choices or maintaining a decent mood (who would tolerate a song from Patrick Sebastien at dusk - Patrick Sebastien is a "dumb" french singer
+that we either don't listen to or only when we are dead drunk ).
+
+Concerning visualisation, we use a gravity effects on those links with different
+weights for each type (fixed for tags, adjustable through the UI for transitions and universes). This gives an overview of the "health condition" of our playlist when using default weights, and chose whether we'd like to work on transition (to identify and fix orphan songs or dead ends) or universes. 
+
+Genres, decades and energy (a value from 1 to 10 to define dynamism) are represented via specific nodes. BPM is indicated by the color of the song node, ranging from light blue to red.
+
+
+##  Example
+
+And here is the final result, with the wedding's playlist :
+
+<Experiment height={500} name="Didier">
+  <Exp01 />
+</Experiment>
+
+
+By enlarging the frame a menu appears on the right, providing a list version that complements the graph (and is much more practical on mobile devices).
+
+At first the graph is a little confusing because every links are displayed,
+with universes attracting songs more than the other nodes. 
+For a first usage transitions can be disabled and the cursor can be used to show universes only using top left controls. 
+
+Clicking on a node selects it, and links to it are highlighted.  
+Double clicking nodes temporarily changes the layout around them so that every linked nodes are shown in a circle around the selected one. 
+
+## Sessions and BPM
+
+After a few tests we realized that, after a while, we tended to replay a song we already played during the same session. So I added the concept of session to the server so that we can create one and add songs to it through the UI. It would have been nice to have an automatic process for this but the app we used (*Djay Pro* on iPad, excellent by the way) does not offer a way to fetch the current songs that are playing on the turntables.
+
+It is however compatible with Ableton Link, a protocol to sync BPM between multiple connected machines. With a small server-side library I was able to retrieve this BPM and display it on the UI... Though it wasn't really useful - it was already displayed on the tablet next to the turntables - it was fun to develop. 
+
+## Techs and data
+
+As I do not have (yet) planned to start a DJ career, I knew this project would
+only be used once and that we would have to come back to our songs selection multiple times during our playlist build phase (and especially change songs versions as 13 minutes long extended play are quite difficult to setup ). 
+
+So I chose to dispense with database management (and the interface I'd have to build to go with it) and instead use ID3 tags to store required data then  extract them in a single huge JSON file. 
+
+So here are the main parts of this project :
+
+  - Custom ID3 tags to store required data (with a small custom syntax to list transitions) ;
+  - A Python script to extract relevant ID3 tags, thumbnails (ultimately not used) and list all these data in a JSON file ;
+  - A Clojure server (why Clojure ? because I had ambitions and other plans that I might describe some other time) to manage songs, sessions and Ableton Link ;
+  - A React-based frontend using mainly three libraries : 
+    - Graphology to set graph elements, with support of weights and gravity effects ; 
+    - Sigma.JS to display the graph and interact with it ; 
+    - Visx (a modular library that includes d3 bindings for react) to create the histogram shown in the right menu. 
+
+The final code is not as clean as I'd like, and with more time I would able been able to make it way cleaner (especially on the front end), but nonetheless I have been more than satisfied with the `graphology`/`sigma.js` duet, and I will most certainly use them in other projects in the future.
+
+## Links
+
+- [Dedicated experiment page](/experiments/didier)
+- [Github](https://github.com/fredericlb/parapluie.org/tree/main/experiments/01-didier)

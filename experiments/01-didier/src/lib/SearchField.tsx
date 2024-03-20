@@ -117,10 +117,10 @@ const SearchField: React.FC<{
 								fontSize: 11,
 								margin: 2,
 								background: "#AAA",
-								height: "14px",
+								height: "20px",
 								gap: 2,
 								color: "black",
-								padding: 1,
+								padding: 2,
 								borderRadius: 4,
 								cursor: "pointer",
 							}}

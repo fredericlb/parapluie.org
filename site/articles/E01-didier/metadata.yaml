@@ -1,0 +1,14 @@
+publishDate: 2024-03-01
+cover: /cover_didier.jpg
+title:
+  en: "Experiment 'Didier' - Graph Theory for DJs"
+  fr: "Expérience 'Didier' - La théorie des graphes pour les DJs"
+
+summary:
+  fr: Où l'on parle d'un projet qui permet de visualiser les transitions et les rapports entre les morceaux d'un DJ set au travers d'un graphe interactif, ainsi que de la façon dont il est construit. 
+  en: In which we talk about a project that visualizes the transitions and relationships between tracks in a DJ set through an interactive graph, and the way it's done. 
+
+tags:
+  - musique
+  - dev
+  - smallproject

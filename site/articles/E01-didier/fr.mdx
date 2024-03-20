@@ -1,0 +1,92 @@
+## Histoire
+
+L'Été dernier il nous a été demandé, à ma dulcinée et moi, d'être animateur-rice-s et DJ à un mariage. Pour la première partie mon 
+charisme et ma verve naturels ont suffi, mais pour la deuxième  c'était une toute nouvelle expérience et nous avons dû apprendre 
+à être de bons DJ (de mariage) de A à Z. Deux obstacles subsistaient :
+ 
+- Comment se synchroniser en se partageant la platine pendant plusieurs heures ? Est-ce que l'un d'entre nous allait jouer un morceau
+que l'autre jugeait essentiel pour ses transitions, et ainsi décevoir un public jusque là charmé ? 
+- Puisque il n'y a qu'un mariage, et que le seul lieu où l'on a pu s'entrainer c'est depuis chez nous, avec nos 2 paires d'oreilles, comment 
+noter et retenir correctement toutes les transitions que l'on juge possibles ? Car si il existe certainement un chemin optimal pour inclure
+tous les morceaux que nous avions choisis, nous n'étions pas assez naïfs pour penser que le public ne nous demanderait pas de passer un morceau 
+sans tenir compte de la perfection de notre suite de transitions initialement prévue. Il fallait donc prévoir plusieurs transitions pour un même
+morceau, et faire attention à ceux qui nous jetteraient dans une impasse. 
+
+Mais pas de panique ! Mes pouvoirs d'informaticien, et surtout mon envie de tout transformer en sujet de DataViz m'ont permis de créer Didier
+(oui, juste parce que le nom ressemble à ...), une interface qui nous permettrait de gérer ces problématiques. Et le public de son côté a 
+pu passer une soirée moins catastrophique que ce qu'on peut imaginer, alors Didier, merci à toi. 
+
+## Transitions et Univers
+
+L'interface de visualisation prend la forme d'un graphe et définit 3 types de lien entre les morceaux : 
+
+- Les *liens de transitions*, qui vont d'un morceau à un autre ; 
+- Les *liens de tag*, qui lient un morceau à un nœud spécifique pour faire apparaitre certains tags (dans notre cas le genre, la décennie et l'énergie).
+- Les *liens d'univers*, là aussi un lien vers un nœud spécifique mais pour un type de tag personnalisé. 
+
+*Que sont les univers ?* 
+
+Si avoir tous plein de liens de morceaux en morceaux nous permet déjà d'avancer, pouvoir subdiviser le "travail" en plusieurs sous groupes
+a rendu la tâche moins complexe et surtout plus facile à organiser pour le jour J. Ces sous groupes sont les "univers", qui peuvent contenir au maximum une dizaine 
+de morceaux, et qui nous permettent de regrouper ceux que l'on imagine bien ensemble, avec des portes d'entrées et de sorties faciles à identifier vers d'autres 
+univers. Dans certains cas ils correspondent plus ou moins aux genres des morceaux, mais parfois ce sont des choix plus subjectifs ou basés sur le maintien 
+d'une ambiance acceptable (qui pourrait tolérer l'apparition d'un Patrick Sebastien la nuit à peine tombée ?)
+
+Niveau visualisation, on utilise un effet de gravité sur les différents liens avec des pondérations différentes
+ pour chaque type (fixe pour les tags, ajustables dans l'interface pour les transitions et les univers). 
+ On peut ainsi avoir un aperçu de l'"état de santé" de notre sélection en utilisant la pondération par défaut, puis 
+choisir si l'on veut avancer sur les transitions (pour identifier et corriger les morceaux orphelins ou impasses) ou les univers. 
+
+La représentation des genres, décennies et de l'énergie (une valeur de 1 à 10 pour définir le dynamisme) est faite via des nœuds spécifiques. Le BPM est indiqué via la couleur du nœud du morceau, en allant du bleu clair au rouge. 
+
+##  Exemple
+
+Et voici le résultat final, avec la sélection du mariage en question : 
+
+<Experiment height={500} name="Didier">
+  <Exp01 />
+</Experiment>
+
+En agrandissant un menu apparaitra sur la droite, qui permet d'avoir une version en liste complémentaire au graphe (et bien plus pratique sur mobile).
+
+Au départ l'affichage est un peu confus puisque tous les liens sont affichés, 
+avec les univers qui regroupent plus que le reste les différents morceaux. 
+Pour une première lecture on peut désactiver les transitions et diriger le 
+curseur vers les univers avec les contrôles en haut à gauche. 
+
+En cliquant sur un nœud on le sélectionne et les liens qui le concernent sont mis en surbrillance. En double cliquant les liens sont temporairement ré-arrangés pour les regrouper en cercle autour du nœud sélectionné.
+
+## Sessions et BPM
+
+Après quelques tests on s'est rendu compte qu'on avait tendance, au bout d'un
+moment, à rejouer un morceau que nous avions déjà joué dans la même session. Qu'à cela ne tienne, j'ai ajouté cette notion de session au serveur pour pouvoir en créer et y ajouter des morceaux au fur et à mesure, ce qui est bien pratique. J'aurai aimé que ce soit automatique mais l'application que nous utilisions (*Djay Pro* sur iPad, excellente au demeurant) n'avait pas de moyen de récupérer cette information. 
+
+Elle est par contre compatible avec Ableton Link, un protocole pour synchroniser le BPM de plusieurs machines connectées. Avec une petite librairie côté serveur j'ai pu récupérer ce BPM et l'afficher dans l'interface... Alors certes ce n'était pas très utile - il était déjà affiché sur la tablette juste à côté - mais c'était fun à faire. 
+
+
+## Technos et data
+
+N'ayant pas (encore) prévu une carrière de DJ, je savais que ce projet serait utilisé une seule fois et qu'on allait devoir revenir sur les morceaux
+choisis pendant toute la sélection (et surtout changer certaines versions car les extended play de 13 minutes, c'est un peu compliqué à jouer en entier).
+
+J'ai donc choisi de me passer de la gestion d'une base de données (et de l'interface que j'aurai dû faire pour aller avec) et plutôt d'utiliser 
+les tags ID3 pour y mettre les informations nécessaires puis de les extraire et d'en faire un gros fichier JSON qui contiendrait tout. 
+
+Et au final voici les composantes principales de ce projet :
+
+  - Des tags ID3 personnalisés pour stocker les informations dont j'avais besoin (avec une petite syntaxe spécifique pour lister les transitions) ; 
+  - Un script Python qui extrait les tags ID3 pertinents, les miniatures (au final pas utilisé) et liste tout ça dans un fichier JSON ; 
+  - Un serveur en Clojure (pourquoi ? car j'étais ambitieux et j'avais d'autres plans dont je parlerai peut être une autre fois) pour manipuler les morceaux, 
+    les sessions et Ableton Link ;
+  - Un front React qui utilise principalement trois librairies :
+    - Graphology pour placer les éléments du graphe, avec la gestion des poids et des effets de gravité ; 
+    - Sigma.js pour afficher et intéragir avec le graphe ; 
+    - Visx (une librairie modulaire de bindings d3 pour react) pour l'histogramme qui s'affiche dans le menu de droite. 
+
+Le code final n'est pas des plus propres et avec plus de temps j'aurai pu faire bien mieux, surtout sur le front, mais j'ai été plus que satisfait du duo 
+`graphology`/`sigma.js` et je les utiliserai certainement sur d'autres projets à l'avenir.
+
+## Liens
+
+- [L'expérience seule](/experiments/didier)
+- [Les sources sur Github](https://github.com/fredericlb/parapluie.org/tree/main/experiments/01-didier)
